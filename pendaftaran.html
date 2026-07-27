@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Universitas Handayani Makassar</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="logo">Universitas<span>Handayani Makassar</span></div>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html#home">Beranda</a>
+                <a href="index.html#about">Tentang</a>
+                <a href="index.html#programs">Program Studi</a>
+                <a href="index.html#news">Berita &amp; Acara</a>
+                <a href="index.html#gallery">Galeri</a>
+                <a href="kontak.html" class="active">Kontak</a>
+                <a href="pendaftaran.html">Pendaftaran</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ==================== KONTAK ==================== -->
+    <section class="page-section active" id="page-contact">
+        <div class="container">
+            <h2 class="section-title">Kontak</h2>
+            <p class="section-subtitle">Hubungi kami untuk informasi lebih lanjut.</p>
+
+            <div class="contact-grid">
+                <div class="contact-form">
+                    <h3 style="color:var(--primary);margin-bottom:6px;">Kirim Pesan</h3>
+                    <p style="color:var(--text-muted);font-size:0.95rem;margin-bottom:16px;">Isi formulir di bawah ini dan tim kami akan merespon segera.</p>
+                    <form id="contactForm">
+                        <label for="contactName">Nama Lengkap</label>
+                        <input type="text" id="contactName" placeholder="Masukkan nama Anda" required />
+
+                        <label for="contactEmail">Alamat Email</label>
+                        <input type="email" id="contactEmail" placeholder="Masukkan email Anda" required />
+
+                        <label for="contactSubject">Subjek</label>
+                        <select id="contactSubject">
+                            <option value="info">Informasi Umum</option>
+                            <option value="admission">Pendaftaran</option>
+                            <option value="collab">Kerjasama</option>
+                            <option value="other">Lainnya</option>
+                        </select>
+
+                        <label for="contactMessage">Pesan</label>
+                        <textarea id="contactMessage" placeholder="Tulis pesan Anda..." required></textarea>
+
+                        <button type="submit" class="btn-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+
+                <div class="contact-info">
+                    <h3>📍 Alamat</h3>
+                    <p>Jl. Adiyaksa Baru No.1 Kecamatan Panakkukang</p>
+                    <h3>📞 Telepon</h3>
+                    <p>(021) 1234-5678</p>
+                    <h3>✉️ Email</h3>
+                    <p>info@univhandayanimakassar.ac.id</p>
+                    <h3>🕒 Jam Operasional</h3>
+                    <p>Senin – Jumat: 08.00 – 17.00 WIB</p>
+                    <p>Sabtu: 08.00 – 13.00 WIB</p>
+                    <h3>🌐 Media Sosial</h3>
+                    <p style="display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;">
+                        <span>📘 Facebook</span>
+                        <span>🐦 Twitter</span>
+                        <span>📸 Instagram</span>
+                        <span>▶️ YouTube</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 <span>Universitas Handayani Makassar</span>. All rights reserved.</p>
+            <p style="font-size:0.85rem;margin-top:4px;">Dibangun dengan ❤️ untuk pendidikan yang lebih baik.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

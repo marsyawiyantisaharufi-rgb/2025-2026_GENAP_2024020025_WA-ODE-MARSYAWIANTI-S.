@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pendaftaran - Universitas Handayani Makassar</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <div class="logo"><span>UHM</span></div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <div class="nav-menu" id="navMenu">
+          <a href="index.html#home">Beranda</a>
+          <a href="index.html#about">Tentang</a>
+          <a href="index.html#programs">Program Studi</a>
+          <a href="index.html#news">Berita &amp; Acara</a>
+          <a href="index.html#gallery">Galeri</a>
+          <a href="kontak.html">Kontak</a>
+          <a href="pendaftaran.html" class="active">Pendaftaran</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ===== TOAST ===== -->
+    <div class="toast" id="toast"></div>
+
+    <!-- ==================== PENDAFTARAN ==================== -->
+    <section class="page-section active" id="page-admission">
+      <div class="container">
+        <h2 class="section-title">Pendaftaran</h2>
+        <p class="section-subtitle">Informasi dan formulir pendaftaran online.</p>
+
+        <div class="admission-grid">
+          <div class="admission-info">
+            <h3>Prosedur Pendaftaran</h3>
+            <ol style="padding-left: 20px; color: var(--text-muted); margin-bottom: 20px">
+              <li style="margin-bottom: 6px">Mengisi formulir pendaftaran online di bawah ini.</li>
+              <li style="margin-bottom: 6px">Melakukan pembayaran biaya pendaftaran sebesar Rp 350.000.</li>
+              <li style="margin-bottom: 6px">Mengunggah berkas persyaratan (Ijazah, KTP, Pas Foto).</li>
+              <li style="margin-bottom: 6px">Menunggu jadwal tes seleksi (bagi program studi tertentu).</li>
+              <li style="margin-bottom: 6px">Menerima pengumuman kelulusan melalui email/website.</li>
+            </ol>
+            <h3>Jadwal Penting</h3>
+            <ul>
+              <li>Pendaftaran dibuka: 1 Agustus 2026</li>
+              <li>Batas akhir pendaftaran: 30 September 2026</li>
+              <li>Tes seleksi: 5–7 Oktober 2026</li>
+              <li>Pengumuman: 20 Oktober 2026</li>
+            </ul>
+            <h3>Bantuan Pendaftaran</h3>
+            <p style="color: var(--text-muted)">Hubungi hotline: (021) 1234-9999 atau email: admission@universitashandayani.ac.id</p>
+          </div>
+
+          <div class="admission-form">
+            <h3 style="color: var(--primary); margin-bottom: 6px">Formulir Pendaftaran Online</h3>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 16px">Isi data dengan benar dan lengkap.</p>
+            <form id="admissionForm">
+              <label for="regName">Nama Lengkap</label>
+              <input type="text" id="regName" placeholder="Nama lengkap" required />
+
+              <label for="regEmail">Alamat Email</label>
+              <input type="email" id="regEmail" placeholder="Email aktif" required />
+
+              <label for="regPhone">Nomor Telepon</label>
+              <input type="tel" id="regPhone" placeholder="08xx-xxxx-xxxx" required />
+
+              <label for="regBirth">Tanggal Lahir</label>
+              <input type="date" id="regBirth" required />
+
+              <label for="regProgram">Program Studi Pilihan</label>
+              <select id="regProgram" required>
+                <option value="">-- Pilih Program Studi --</option>
+                <option value="Teknik Informatika">Teknik Informatika</option>
+                <option value="Teknik Sipil">Teknik Sipil</option>
+                <option value="Manajemen">Manajemen</option>
+                <option value="Psikologi">Psikologi</option>
+                <option value="Ilmu Komunikasi">Ilmu Komunikasi</option>
+                <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+                <option value="Agroteknologi">Agroteknologi</option>
+                <option value="Desain Komunikasi Visual">Desain Komunikasi Visual</option>
+              </select>
+
+              <label for="regMessage">Catatan Tambahan (opsional)</label>
+              <textarea id="regMessage" placeholder="Informasi tambahan..." rows="3"></textarea>
+
+              <button type="submit" class="btn-submit">Daftar Sekarang</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; 2026 <span>Universitas Handayani Makassar</span>. All rights reserved.</p>
+        <p style="font-size: 0.85rem; margin-top: 4px">Dibangun dengan ❤️ untuk pendidikan yang lebih baik.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
